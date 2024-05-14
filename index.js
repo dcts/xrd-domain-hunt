@@ -1,7 +1,8 @@
-import RnsSDK from '@radixnameservice/rns-sdk';
+import RnsSDKImport from '@radixnameservice/rns-sdk';
+const RnsSDK = RnsSDKImport.default;
 
 // Init rns globally
-const rns = new RnsSDK.default({
+const rns = new RnsSDK({
     network: 'mainnet' // or mainnet
 });
 
